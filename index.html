@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Travel – Best Travel WordPress Theme</title>
-    <!-- <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" /> -->
+    <title>My Travel</title>
+    <link rel="icon" href="./assets/img/header/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -213,15 +213,8 @@
             </div>
 
             <!-- Header Menu -->
-            <div class="header-menu">
-                <i class="header-menu__icon ti-menu"></i>
-                <!-- <div class="header-menu__container">
-                    <header class="header-menu__container-header">
-                        <p>BEST</p>
-                        <p>PACKAGES</p>
-                    </header>
-
-                </div> -->
+            <div class="header-menu-btn js-menu-btn">
+                <img src="./assets/img/header/menu.png" alt="" class="header-menu-btn__icon">
             </div>   
         </header>
         
@@ -238,13 +231,13 @@
 
                 
                 <div class="slider-container__destination">
-                    <div class="btn slider-container__destination-btn">
+                    <div class="btn slider-container__destination-btn js-choose-btn">
                         Choose your Destination...
                         <i class="ti-search"></i>
                     </div>
                     
                     <!-- Destination List -->
-                    <ul class="slider-container__destination-list">
+                    <ul class="slider-container__destination-list js-choose-list">
                         <li class="slider-container__destination-list-item">
                             <span>Europe</span>
                         </li>
@@ -494,6 +487,7 @@
 
                         <div class="reserves__container-content-count-down">
                             <img src="./assets/img/content/reserves-1.jpg" alt="" class="reserves__container-content-count-down-img">
+                            
                             <div class="reserves__container-content-count-down-container">
                                 <ul class="reserves__container-content-count-down-list">
                                     <li class="reserves__container-content-count-down-list-item">
@@ -613,8 +607,9 @@
                             
                             <div class="promotions__list-item-text-info">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                                <a href="" class="btn" style="background-color: #FFD205;">DETAILS</a>
                             </div>
+
+                            <a href="" class="btn promotions__list-item-btn" style="background-color: #FFD205;">DETAILS</a>
                         </div>
                     </li>
 
@@ -651,8 +646,9 @@
                             
                             <div class="promotions__list-item-text-info">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                                <a href="" class="btn" style="background-color: #F76570;">DETAILS</a>
                             </div>
+
+                            <a href="" class="btn promotions__list-item-btn" style="background-color: #F76570;">DETAILS</a>
                         </div>
                     </li>
 
@@ -687,8 +683,9 @@
                             
                             <div class="promotions__list-item-text-info">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                                <a href="" class="btn" style="background-color: #BA71DA;">DETAILS</a>
                             </div>
+
+                            <a href="" class="btn promotions__list-item-btn" style="background-color: #BA71DA;">DETAILS</a>
                         </div>
                     </li>
                 </ul>
@@ -764,5 +761,198 @@
             </div>
         </footer>
     </div>
+
+    <!-- Label link-->
+    <div class="label">
+        <div class="label-number">
+            <span class="label-number__char">$</span>
+            <a href="" class="label-number__link">54</a> 
+            <div class="label-buying">BUY NOW</div>
+            <a href="" class="label-icon">
+                <img src="./assets/img/label/envato.png" alt="" class="label-icon__img">
+            </a>
+        </div> 
+    </div>
+    
+    <!-- Menu modal -->
+    <div class="menu__container js-menu-container">
+        <img src="./assets/img/header/close.png" alt="" class="menu__close-icon js-menu-close">
+        <header class="content__header menu__header">
+            <p>BEST</p>
+            <h1 style="text-decoration: underline 6px solid #ffd105;">PACKAGES</h1>
+        </header>
+
+        <ul class="menu__list">
+            <li class="menu__list-item">
+                <div class="menu__list-item-wrap-img">
+                    <img src="./assets/img/content/promotion-1.jpg" alt="" class="menu__list-item-img">
+                </div>
+                <div class="menu__list-item-content">
+                    <a href="" class="menu__list-item-content-name">Berlin</a>
+                    <a href="" class="menu__list-item-content-from">
+                        <img src="./assets/img/content/icon-dest.png" alt="" class="menu__list-item-content-from-icon">
+                        Europe
+                    </a>
+                    <a href="" class="btn menu__list-item-btn" style="background: linear-gradient(to right, rgb(255, 210, 5) 0%, rgb(255, 155, 5) 100%);">FROM 700 $</a>
+                </div>
+            </li>
+            <li class="menu__list-item">
+                <div class="menu__list-item-wrap-img">
+                    <img src="./assets/img/content/promotion-2.jpg" alt="" class="menu__list-item-img">
+                </div>
+                <div class="menu__list-item-content">
+                    <a href="" class="menu__list-item-content-name">Hong Kong</span>
+                    <a href="" class="menu__list-item-content-from">
+                        <img src="./assets/img/content/icon-dest.png" alt="" class="menu__list-item-content-from-icon">
+                        Asia
+                    </a>
+                    <a href="" class="btn menu__list-item-btn" style="background: linear-gradient(to right, #f76570 0%, #f78d65 100%);">FROM 500 $</a>
+                </div>
+            </li>
+            <li class="menu__list-item">
+                <div class="menu__list-item-wrap-img">
+                    <img src="./assets/img/content/promotion-3.jpg" alt="" class="menu__list-item-img">
+                </div>
+                <div class="menu__list-item-content">
+                    <a href="" class="menu__list-item-content-name">San Francisco</a>
+                    <a href="" class="menu__list-item-content-from">
+                        <img src="./assets/img/content/icon-dest.png" alt="" class="menu__list-item-content-from-icon">
+                        United States
+                    </a>
+                    <a href="" class="btn menu__list-item-btn" style="background: linear-gradient(to right, #ba71da 0%, #da717b 100%);">FROM 400 $</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="menu__label">
+            <div class="destinations__list-item menu__label-item">  
+                <img src="./assets/img/content/destination-1.jpg" alt="" class="destinations__item-img">
+                <div class="wrap--cover"></div>
+                <div class="destinations__item-content">
+                    <img src="./assets/img/content/icon-1.png" alt="" class="destinations__item-content-img">
+                    <div class="destinations__item-content-text">
+                        <h2 class="destinations__item-content-text-name">Europe</h2>
+                        <p class="destinations__item-content-text-number">3 PACKAGES</p>
+                    </div>
+                </div>
+                <div class="destinations__item--wrap">
+                    <div class="destinations__item--wrap-container">
+                        <div class="destinations__item--wrap-text">
+                            <h2>Packages</h2>
+                            <p>Berlin</p>
+                            <p>Amsterdam</p>
+                            <p>Tuscany</p>
+                        </div>
+                        <a href="" class="btn destinations__item--wrap-btn">
+                            <span>VIEW DESTINATON</span> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="content__header menu__header">
+            <p>LAST</p>
+            <h1 style="text-decoration: underline 6px solid #ffd105;">MINUTES</span> 
+            </h1>
+        </header>
+
+        <ul class="menu__list">
+            <li class="menu__list-item">
+                <div class="menu__list-item-wrap-img">
+                    <img src="./assets/img/content/promotion-4.jpg" alt="" class="menu__list-item-img">
+                </div>
+                <div class="menu__list-item-content">
+                    <a href="" class="menu__list-item-content-name">Tuscany</a>
+                    <a href="" class="menu__list-item-content-from">
+                        <img src="./assets/img/content/icon-dest.png" alt="" class="menu__list-item-content-from-icon">
+                        Italy
+                    </a>
+                    <a href="" class="btn menu__list-item-btn" style="background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);">FROM 730 $</a>
+                </div>
+            </li>
+            <li class="menu__list-item">
+                <div class="menu__list-item-wrap-img">
+                    <img src="./assets/img/content/promotion-5.jpg" alt="" class="menu__list-item-img">
+                </div>
+                <div class="menu__list-item-content">
+                    <a href="" class="menu__list-item-content-name">Amsterdam</span>
+                    <a href="" class="menu__list-item-content-from">
+                        <img src="./assets/img/content/icon-dest.png" alt="" class="menu__list-item-content-from-icon">
+                        Netherlands
+                    </a>
+                    <a href="" class="btn menu__list-item-btn" style="background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);">FROM 1500 $</a>
+                </div>
+            </li>
+            <li class="menu__list-item">
+                <div class="menu__list-item-wrap-img">
+                    <img src="./assets/img/content/promotion-6.jpg" alt="" class="menu__list-item-img">
+                </div>
+                <div class="menu__list-item-content">
+                    <a href="" class="menu__list-item-content-name">PhuKet</a>
+                    <a href="" class="menu__list-item-content-from">
+                        <img src="./assets/img/content/icon-dest.png" alt="" class="menu__list-item-content-from-icon">
+                        Thailandia
+                    </a>
+                    <a href="" class="btn menu__list-item-btn" style="background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);">FROM 1200 $</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- JS menu -->
+    <script>
+        const menuBtn = document.querySelector('.js-menu-btn')
+        const menuWrapClose = document.querySelector('.main')
+        const menuContainer = document.querySelector('.js-menu-container')
+        const menuClose = document.querySelector('.js-menu-close')
+
+        // Hàm hiển thị menu (thêm class open vào menu)
+        function showMenu() {
+            menuContainer.classList.add('open')
+        }
+        
+        // Hàm ẩn menu (xóa class open)
+        function hideMenu() {
+            menuContainer.classList.remove('open')
+
+        }
+
+        menuBtn.addEventListener('click', showMenu)
+        menuClose.addEventListener('click', hideMenu)
+        menuWrapClose.addEventListener('click', hideMenu)
+        menuContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+        menuBtn.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- JS choose list -->
+    <script>
+        const chooseBtn = document.querySelector('.js-choose-btn')
+        const chooseList = document.querySelector('.js-choose-list')
+
+        const chooseClose = document.querySelector('.main')
+
+        function showChoosList() {
+            chooseList.classList.add('open')
+        }
+
+        function hideChoosList() {
+            chooseList.classList.remove('open')
+        }
+
+        chooseBtn.addEventListener('click',showChoosList)
+        chooseClose.addEventListener('click',hideChoosList)
+        chooseList.addEventListener('click',function (event) {
+            event.stopPropagation()
+        })
+        chooseBtn.addEventListener('click',function (event) {
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>

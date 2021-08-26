@@ -16,23 +16,29 @@ html {
     line-height: 1.6rem; /* 16px */
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .btn {
     min-width: 146px;
     height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     border: none;
     border-radius: 38px;
     text-decoration: none;
+    font-size: 1.4rem;
+    padding: 10px 15px;
     outline: none;
-    padding: 0;
-    line-height: 1.6rem;
-    padding: 10px 15px 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4rem;
     background-color: var(--white-color);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .label__highlight {
@@ -52,7 +58,7 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
 }
 
 /* Animation */
@@ -71,5 +77,17 @@ html {
     }
     to {
         transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes menuFadeIn {
+    from {
+        transform: translateX(350px);
+    }
+}
+
+@keyframes menuFadeOut {
+    to {
+        /* opacity: 0; */
     }
 }
