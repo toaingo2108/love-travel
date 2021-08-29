@@ -5,18 +5,23 @@
 
     --header-background-color: rgba(0, 0, 0, 0.12);
     --header-height: 104px;
+
+    --red-color: #F76570;
+    --brown-color: #E27557;
+    --blue-color: #14B9D5;
 }
 
 * {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 html {
     font-size: 62.5%; /* 10px */
     line-height: 1.6rem; /* 16px */
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .btn {

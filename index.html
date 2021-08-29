@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div class="main">
@@ -25,7 +26,7 @@
                         <a href="" class="header__list-item-link">Home</a>
                     </li>
                     <li class="header__list-item">
-                        <a href="" class="header__list-item-link">
+                        <a href="./packages.html" class="header__list-item-link">
                             Packages
                         </a>
                         <ul class="header__list-sublist">
@@ -375,7 +376,8 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="destinations__list">
                     <div class="destinations__list-item">  
                         <img src="./assets/img/content/destination-4.jpg" alt="" class="destinations__item-img">
                         <div class="wrap--cover"></div>
@@ -450,7 +452,6 @@
 
             <!-- Content View -->
             <div class="view">
-                <img src="./assets/img/content/view.jpg" alt="" class="view__img">
                 <div class="view__content">
                     <h1 class="view__content-title">
                         <span>Your </span>
@@ -461,6 +462,7 @@
                     </a>
 
                 </div>
+                <img src="./assets/img/content/view.jpg" alt="" class="view__img">
             </div>
 
             <!-- Content Reserves -->
@@ -486,8 +488,18 @@
                         </div>
 
                         <div class="reserves__container-content-count-down">
-                            <img src="./assets/img/content/reserves-1.jpg" alt="" class="reserves__container-content-count-down-img">
+                            <img src="./assets/img/content/reserves-1.jpg" alt="" class="reserves__container-content-count-down-img js-select-img selected">
+                            <img src="./assets/img/content/reserves-2.jpg" alt="" class="reserves__container-content-count-down-img js-select-img">
+                            <img src="./assets/img/content/reserves-3.jpg" alt="" class="reserves__container-content-count-down-img js-select-img">
                             
+                            <div class="selection">
+                                <div class="selection-btns">
+                                    <div class="selection-btn js-select-btn selected"></div>
+                                    <div class="selection-btn js-select-btn"></div>
+                                    <div class="selection-btn js-select-btn"></div>
+                                </div>
+                            </div>
+
                             <div class="reserves__container-content-count-down-container">
                                 <ul class="reserves__container-content-count-down-list">
                                     <li class="reserves__container-content-count-down-list-item">
@@ -899,60 +911,26 @@
             </li>
         </ul>
     </div>
-
-
-    <!-- JS menu -->
-    <script>
-        const menuBtn = document.querySelector('.js-menu-btn')
-        const menuWrapClose = document.querySelector('.main')
-        const menuContainer = document.querySelector('.js-menu-container')
-        const menuClose = document.querySelector('.js-menu-close')
-
-        // Hàm hiển thị menu (thêm class open vào menu)
-        function showMenu() {
-            menuContainer.classList.add('open')
-        }
-        
-        // Hàm ẩn menu (xóa class open)
-        function hideMenu() {
-            menuContainer.classList.remove('open')
-
-        }
-
-        menuBtn.addEventListener('click', showMenu)
-        menuClose.addEventListener('click', hideMenu)
-        menuWrapClose.addEventListener('click', hideMenu)
-        menuContainer.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-        menuBtn.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-    </script>
-
-    <!-- JS choose list -->
-    <script>
-        const chooseBtn = document.querySelector('.js-choose-btn')
-        const chooseList = document.querySelector('.js-choose-list')
-
-        const chooseClose = document.querySelector('.main')
-
-        function showChoosList() {
-            chooseList.classList.add('open')
-        }
-
-        function hideChoosList() {
-            chooseList.classList.remove('open')
-        }
-
-        chooseBtn.addEventListener('click',showChoosList)
-        chooseClose.addEventListener('click',hideChoosList)
-        chooseList.addEventListener('click',function (event) {
-            event.stopPropagation()
-        })
-        chooseBtn.addEventListener('click',function (event) {
-            event.stopPropagation()
-        })
-    </script>
 </body>
+
+<!-- JS menu -->
+<script src="assets/js/menu.js"></script>
+
+<!-- JS choose list -->
+<script src="assets/js/chooseList.js"></script>
+
+<!-- JS selection img -->
+    <!-- <script>
+        const selectBtns = document.querySelectorAll('js-select-btn')
+        const selectImg = document.querySelectorAll('js-select-img')
+
+        function showSelected() {
+            
+        }
+
+        for (const selectBtn of selectBtns) {
+            selectBtn.addEventListener('click', showSelected)
+        }
+    </script> -->
+
 </html>
