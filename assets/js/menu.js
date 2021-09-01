@@ -25,3 +25,30 @@ menuContainer.addEventListener('click', function (event) {
 menuBtn.addEventListener('click', function (event) {
     event.stopPropagation()
 })
+
+
+const mobileMenuBtn = document.querySelector('.js-mobile-menu-btn')
+const mobileMenuWrapClose = document.querySelector('.main')
+const mobileMenuContainer = document.querySelector('.js-mobile-menu-container')
+const mobileMenuClose = document.querySelector('.js-mobile-menu-close')
+
+// Hàm hiển thị menu (thêm class open vào menu)
+function showMobileMenu() {
+    mobileMenuContainer.classList.add('open')
+}
+
+// Hàm ẩn menu (xóa class open)
+function hideMobileMenu() {
+    mobileMenuContainer.classList.remove('open')
+
+}
+
+mobileMenuBtn.addEventListener('click', showMobileMenu)
+mobileMenuClose.addEventListener('click', hideMobileMenu)
+mobileMenuWrapClose.addEventListener('click', hideMobileMenu)
+mobileMenuContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+})
+mobileMenuBtn.addEventListener('click', function (event) {
+    event.stopPropagation()
+})

@@ -2,18 +2,26 @@
     --text-color: #A69AA6;
     --white-color: #fff;
     --hover-color: #f9f9f9;
+    --gray-color: #555555;
 
     --header-background-color: rgba(0, 0, 0, 0.12);
     --header-height: 104px;
 
     --red-color: #F76570;
-    --brown-color: #E27557;
+    --orange-color: #F3A46B;
+    --yellow-color: #FFD205;
+    --green-color: #1BBC9B;
     --blue-color: #14B9D5;
+    --brown-color: #E27557;
+    --purple-color: #BA71DA;
 }
 
 * {
+    padding: 0;
+    margin: 0;
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -25,25 +33,62 @@ html {
 }
 
 .btn {
-    min-width: 146px;
-    height: 38px;
     cursor: pointer;
     border: none;
     border-radius: 38px;
     text-decoration: none;
     font-size: 1.4rem;
-    padding: 10px 15px;
     outline: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     line-height: 1.4rem;
     background-color: var(--white-color);
     transition: box-shadow 0.3s ease;
 }
 
+.s-btn {
+    padding: 10px 25px;
+}
+
+.m-btn {
+    padding: 15px 25px;
+}
+
+.l-btn {
+    padding: 15px 35px;
+}
+
 .btn:hover {
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.bgcolor-red {
+    background-color: var(--red-color);
+}
+.bgcolor-orange {
+    background-color: var(--orange-color);
+}
+.bgcolor-yellow {
+    background-color: var(--yellow-color);
+}
+.bgcolor-blue {
+    background-color: var(--blue-color);
+}
+.bgcolor-green {
+    background-color: var(--green-color);
+}
+.bgcolor-brown {
+    background-color: var(--brown-color);
+}
+.bgcolor-purple {
+    background-color: var(--purple-color);
+}
+
+.bgcolor-gray {
+    background-color: var(--gray-color);
+}
+
+.text-right {
+    text-align: right;
 }
 
 .label__highlight {
@@ -64,6 +109,27 @@ html {
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+}
+
+.content__header-base {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.content__header-base p {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 0;
+}
+
+.content__header-base h1 {
+    color: #555555;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 32px;
+    letter-spacing: 1px;
 }
 
 /* Animation */
