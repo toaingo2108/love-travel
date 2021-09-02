@@ -2,6 +2,10 @@
     .header__list-item {
         padding: 30px 10px;
     }
+
+    .header__row {
+        flex-wrap: unset;
+    }
 }
 
 /* PC */
@@ -23,6 +27,7 @@
     
     .header__logo {
         margin-top: 15px;
+        width: 100%;
     }
 
     .header-menu-btn,
@@ -84,7 +89,20 @@
         text-align: center;
         padding: 15px;
     }
-    
+
+    /* Packages */
+    .slider__container {
+        padding-bottom: 0;
+    }
+    .slider__form {
+        margin-bottom: 0;
+    }
+    .slider__select-wrap {
+        width: unset;
+    }
+    .slider__select {
+        width: 100%;
+    }
 }
 
 /* Tablet */
@@ -129,5 +147,18 @@
     .footer__content-text,.footer__content-end {
         width: 90%;
         margin: 0 auto;
+    }
+
+    /* Packages */
+    .slider__more-container {
+        width: unset;
+        transform: none;
+        top: 50px;
+    }
+
+    /* Shop */
+    .promotions__list-item {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
