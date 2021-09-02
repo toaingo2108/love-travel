@@ -47,7 +47,7 @@
         text-align: center;
     }
 
-    .slider__select-wrap {
+    .slider__select-wrap.home{
         width: 90%;
     }
 
@@ -97,9 +97,7 @@
     .slider__form {
         margin-bottom: 0;
     }
-    .slider__select-wrap {
-        width: unset;
-    }
+
     .slider__select {
         width: 100%;
     }

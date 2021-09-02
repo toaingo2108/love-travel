@@ -39,6 +39,7 @@
 }
 
 .slider__select-wrap {
+    width: 100%;
     display: flex;
     background-color: var(--hover-color);
     margin: 20px 0;
@@ -54,7 +55,6 @@
     background-color: var(--hover-color);
     padding: 15px 20px;
     border-radius: 38px;
-
 }
 
 .slider__select[type=range] {

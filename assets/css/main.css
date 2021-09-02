@@ -205,7 +205,9 @@
 .slider__select-wrap {
     position: relative;
     margin: 65px 0;
+    display: flex;
     align-items: center;
+    background-color: var(--red-color);
 }
 
 .slider__select {
@@ -217,12 +219,14 @@
     outline: none;
     appearance: none;
     -webkit-appearance: none;
+    border-radius: 38px;
+    padding: 10px 25px;
 }
 
 .slider__select-icon {
     position: absolute;
-    top: 30%;
-    right: 15px;
+    width: 18px;
+    right: 20px;
     font-size: 1.9rem;
 }
 
