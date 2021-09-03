@@ -1,3 +1,213 @@
 .slider {
     background-image: url(../img/content/view3.jpg);
 }
+
+.about__content {
+    padding: 64px 0;
+}
+
+.about__heading {
+    font-size: 4rem;
+    color: var(--gray-color);
+    line-height: 5rem;
+    text-align: right;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.about__desc {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+}
+
+.about__desc p {
+    padding-top: 18px;
+}
+
+.about__video {
+    width: 60%;
+    height: 510px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.about__contact-wrap {
+    background-image: url(../img/about/about-contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about--cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+}
+
+.about__contact-wrap {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.about__contact-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 96px;
+    z-index: 1;
+}
+
+.about__contact-heading {
+    font-size: 5rem;
+    line-height: 5rem;
+    color: var(--white-color);
+    text-align: center;
+    margin-top: 0;
+}
+
+.about__contact-desc {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.about__contact-btn {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.about__contact-info {
+    padding-top: 30px;
+}
+
+.about__contact-item-container {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about__contact-item-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about__contact-item-name {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--gray-color);
+    letter-spacing: 1px;
+}
+
+.about__contact-item-role {
+    font-size: 1.2rem;
+    display: block;
+    line-height: 1.2rem;
+    color: var(--text-color);
+    padding: 15px 0 20px;
+    letter-spacing: 2px;
+}
+
+.about__contact-item-desc {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+    padding-bottom: 15px;
+}
+
+.about__contact-item-btn {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #f1f1f1;
+}
+
+.about__promotions {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.about__promotions-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about__promotions-item h2 {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    color: var(--gray-color);
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.about__promotions-item-desc {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.about__promotions-item-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__promotions-item-type span {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 1px;
+    border: 1px solid #F1F1F1;
+    border-radius: 38px;
+    padding: 5px 10px;
+    cursor: default;
+}
+
+.about__total {
+    background-image: url(../img/about/total.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+.about__total-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    padding: 40px 0;
+}
+
+.about__total-item h1 {
+    font-size: 5rem;
+    line-height: 8rem;
+    margin: 0;
+}
+
+.about__total-item {
+    font-size: 1.3rem;
+}

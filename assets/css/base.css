@@ -88,6 +88,10 @@ html {
     background-color: var(--gray-color);
 }
 
+.text-white {
+    color: var(--white-color) !important;
+}
+
 .text-right {
     text-align: right;
 }

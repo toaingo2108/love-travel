@@ -1,0 +1,88 @@
+.slider {
+    background-image: url(../img/contact/contact.jpg);
+    background-position: bottom;
+}
+
+.contact__content {
+    padding-top: 34px;
+    padding-bottom: 64px;
+}
+
+.contact__form {
+    padding: 30px 15px 0;
+}
+
+.contact__form-heading {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--gray-color);
+    margin: 0;
+}
+
+.contact__form-desc {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    color: var(--text-color);
+    line-height: 2.4rem;
+    padding: 24px 0;
+}
+
+.contact__form-form {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.contact__form-input {
+    border: 1px solid #f1f1f1;
+    outline: none;
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    background-color: var(--hover-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    margin-top: 15px;
+}
+
+.contact__form-input.message {
+    height: 100px;
+}
+
+.contact__info-container {
+    padding: 30px 0;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.4rem;
+    letter-spacing: 1.2px;
+}
+
+.contact__info-name {
+    color: var(--gray-color);
+}
+
+.contact__info-value {
+    color: var(--text-color);
+}
+
+.contact__phone span {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+
+.contact__phone h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 6rem;
+    color: var(--gray-color);
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
