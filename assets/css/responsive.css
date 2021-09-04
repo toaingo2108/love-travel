@@ -150,8 +150,18 @@
         margin: 0 auto;
     }
 
+    .reserves {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .reserves__container-content-count-down-container {
         width: 100%;
+    }
+
+    .reserves__booking-btn {
+        display: block;
+        text-align: center;
     }
 
     .reserves-footer__list-item {
